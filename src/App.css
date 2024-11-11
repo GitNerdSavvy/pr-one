@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 340px;
+  width: 100%;
+  background: #fff;
+  border-radius: 24px;
+  padding: 25px;
+  position: relative;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.profile-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 36%;
+  width: 100%;
+  border-radius: 24px 24px 0 0;
+  background-color: #4070f4;
+}
+
+.image-container {
+  position: relative;
+  height: 150px;
+  width: 130px;
+  border-radius: 50%;
+  background-color: #4041f424;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+.image-container > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: contain;
+  padding: 3px solid #f4f4f4;
+}
+.text-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
+
+.text-data > .name {
+  font-size: 24px;
+  font-weight: bold;
+}
+.text-data > .job {
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.media-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.media-buttons > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  margin: 0 8px;
+  background-color: #4070f4;
+  text-decoration: none;
+  /* fill: #333; */
+}
+.media-buttons>a:hover{
+  background-color: #0e4bf1;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.buttons > a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  text-decoration: none;
+  border-radius: 24px;
+  margin: 0 8px;
+  padding: 8px 24px;
+  background-color: #4070f4;
+
+  transition: all 0.33 ease-in-out;
+}
+
+.buttons > a:hover {
+  background-color: #0e4bf1;
+  cursor: pointer;
+}
